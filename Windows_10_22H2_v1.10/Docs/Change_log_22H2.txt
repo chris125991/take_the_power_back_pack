@@ -1,0 +1,429 @@
+Updated for Windows 10 22H2.
+
+Version 1.10 - 01-28-2026
+
+Updated
+
+	-Updated Ten Forums Tutorials XLS and PDF (01-12-2026)
+	
+Newly added
+	
+	Win10_Privacy_Settings.reg
+		-Disable Advertising ID for Personalized Ads in Apps
+		 https://www.tenforums.com/tutorials/76453-enable-disable-advertising-id-relevant-ads-windows-10-a.html
+	
+		-Change Feedback Frequency to Never
+		 https://www.tenforums.com/tutorials/2441-how-change-feedback-frequency-windows-10-a.html
+		 
+		-Disable Website Access to Language List - "Let websites show me locally relevant content by accessing my language list"
+		 https://www.tenforums.com/tutorials/82980-turn-off-website-access-language-list-windows-10-a.html
+		 
+	Win10_Look_And_Feel.reg
+		-Set Control Panel icons to large
+		
+		-Disable Core Isolation Memory Integrity
+		 https://www.tenforums.com/tutorials/104025-turn-off-core-isolation-memory-integrity-windows-10-a.html
+		 
+		-Disable Transparency Effects
+		 https://www.tenforums.com/tutorials/5556-turn-off-transparency-effects-windows-10-a.html
+		 
+		-Turn Off Enhance Pointer Precision
+		 https://www.elevenforum.com/t/turn-on-or-off-enhance-pointer-precision-in-windows-11.7327/
+		 
+		-Turn Off Notification Sounds
+		 https://www.tenforums.com/tutorials/61017-turn-off-notification-sound-senders-windows-10-a.html
+
+Version 1.9 - 03-20-2025
+
+Newly added
+
+	-Added Disable Scheduled Task folder
+	-Added Disable Services folder
+
+	Win10_Privacy_Settings.reg
+		-Remove Copilot Button on Taskbar.
+		https://www.tenforums.com/tutorials/209181-add-remove-copilot-button-taskbar-windows-10-a.html
+	  
+	Win10_Look_And_Feel.reg
+		-Disable First Run Experience in Microsoft Edge Chromium
+	  
+Updated
+
+	-Version numbers have been removed from within the REG, BAT, TXT and PS1 files in favor of using last updated dates.
+	-Updated list of apps in Win10_Remove_Bloat.txt.
+	-Updated list of features in Remove_Features.txt.
+	-Updated Ten Forums Tutorials PDF and XLS.
+	-Commented out any Xbox services so they are not disabled in Disable_Services.bat.
+	-Fixed "Enable "Open in Windows Terminal as administrator" context menu (POWERSHELL 7 INSTALLED)" in in Win10_Look_And_Feel.reg.
+	-Fixed "Enable Remote Desktop Connections" in Win10_Look_And_Feel.reg.
+	
+	Win10_Remove_Bloat.ps1
+		-Remove DevHome (Preview), Copilot and Outlook for Windows.
+
+	No Restart command added to:
+		-Enable_Features_Microsoft-Windows-Subsystem-Linux.bat
+		-Enable_Features_NetFramework3.5.bat
+		-Remove_Features.bat
+		
+Removed
+
+	Win10_Look_And_Feel.reg
+		-Removed "Turn Off "News and interests" Icon on Taskbar". (No longer works.)
+		  https://www.tenforums.com/tutorials/188597-add-remove-news-interests-icon-taskbar-windows-10-a.html
+		  https://www.tenforums.com/tutorials/178178-how-enable-disable-news-interests-taskbar-windows-10-a.html
+		  
+		-Removed "Turn On Enhanced Mode for Search Indexer". (No longer works.)
+		  https://www.tenforums.com/tutorials/120447-turn-off-enhanced-mode-search-indexer-windows-10-a.html
+		  
+		
+
+Version 1.8 - 05-11-2024
+
+- Added Cleanup directory in Tools directory.
+
+Version 1.7 - 03-27-2024
+
+- Fixed reboot response in Enable_Features_Microsoft-Windows-Subsystem-Linux.bat and Enable_Features_NetFramework3.5.bat.
+- Added "Windows 10" to comments section at top of Win10_Look_And_Feel.reg and Win10_Privacy_Settings.reg.
+- Renamed directory "Other (WIP)" to "Tools".
+- Moved some directories into the Tools directory.
+- Removed old Ten Forums Tutorials PDFS and added new one.
+- Updated WindowsOptionalFeature.txt in "Remove Features" directory.
+- Added remove_bloat.txt to "Remove Bloat" directory.
+- Removed "Disk Cleanup" and "Tweaks" directories from Tools directory.
+- Added WindowsOptionalFeature.txt to "Enable Features" directory.
+
+Version 1.6 - 07-26-2023
+
+- Removed duplicate entry for "Disable Collect Activity History".
+- Removed possible duplicate "Turn Off Windows Error Reporting for All Users" for "Disable Windows Error Reporting for All Users"
+- Removed possible duplicate "Turn Off Windows Error Reporting for Current User" for "Disable Windows Error Reporting for All Users"
+- Updated  Add Right Click "Open command window here as administrator" Context Menu.
+- Added Troubleshooting directory.
+
+
+Newly added.
+
+	Remove "Add to Windows Media Player list" Context Menu from Media Files
+	https://www.tenforums.com/tutorials/83163-remove-add-windows-media-player-list-context-menu-windows-10-a.html
+
+	Select Desktops to Show Open windows on Taskbar (Only the desktop I'm using)
+	https://www.tenforums.com/tutorials/4751-select-desktops-show-open-windows-taskbar-windows-10-a.html
+
+	To Turn On Automatically Adjust Active Hours for All Users
+	https://www.tenforums.com/tutorials/121699-turn-off-automatically-adjust-active-hours-windows-10-a.html#option2
+
+	Disable "First Sign-in Animation" in Windows 10
+	https://www.tenforums.com/tutorials/2411-turn-off-user-first-sign-animation-window-10-a.html
+
+	Disable Users to Sign in to Windows 10 using Biometrics
+	https://www.tenforums.com/tutorials/107441-enable-disable-users-sign-windows-10-using-biometrics.html
+
+	Disable User Files Backup in Windows Backup
+	https://www.tenforums.com/tutorials/98709-enable-disable-user-files-backup-windows-backup-windows-10-a.html
+
+	Add "Always use this app to open" to Open with "How do you want to open this file?" dialog
+	https://www.tenforums.com/tutorials/156072-how-add-remove-open-always-use-app-windows-10-a.html
+	
+	Turn On Show Encrypted or Compressed NTFS files in Color
+	https://www.tenforums.com/tutorials/89204-show-encrypted-compressed-ntfs-files-color-windows-10-a.html
+	
+	Shutdown when pressing Power Button when plugged in.
+	https://www.tenforums.com/tutorials/69741-change-default-action-power-button-windows-10-a.html
+
+	Shutdown when pressing Power Button when on batteries.
+	https://www.tenforums.com/tutorials/69741-change-default-action-power-button-windows-10-a.html
+	
+	Enable Ultimate Performance Power Plan
+	https://www.tenforums.com/tutorials/91744-specify-default-active-power-plan-windows-10-a.html
+	
+	Disable AutoSuggest in Explorer address bar and Run dialog
+	https://www.tenforums.com/tutorials/119367-enable-disable-autosuggest-file-explorer-run-windows.html
+	
+	Turn On Enhanced Mode for Search Indexer
+	https://www.tenforums.com/tutorials/120447-turn-off-enhanced-mode-search-indexer-windows-10-a.html
+	
+	Disable Shared Experiences
+	https://www.tenforums.com/tutorials/109989-enable-disable-shared-experiences-windows-10-a.html
+	
+	Disable Run News Bar at Startup
+	https://www.tenforums.com/tutorials/153936-how-enable-disable-run-news-bar-startup-windows-10-a.html
+	
+	Turn Off Notification Sound for All Apps and Senders
+	https://www.tenforums.com/tutorials/61017-turn-off-notification-sound-senders-windows-10-a.html
+	
+	Enable Num Lock on Sign-in Screen
+	https://www.tenforums.com/tutorials/36010-enable-disable-num-lock-sign-screen-windows-10-a.html
+	
+	Enable "Open in Windows Terminal as administrator" context menu 
+	https://www.tenforums.com/tutorials/178668-add-remove-open-windows-terminal-administrator-context-menu.html
+	
+	Enable clear Browsing Data on Exit of Microsoft Edge
+	https://www.tenforums.com/tutorials/41966-turn-off-clear-browsing-data-exit-microsoft-edge.html
+	
+	Turn Off "Make Microsoft Edge your default browser" prompt in Microsoft Edge
+	https://www.tenforums.com/tutorials/48421-turn-off-make-microsoft-edge-default-browser-prompt.html
+	
+	Show More Details in File Transfer Dialog 
+	https://www.tenforums.com/tutorials/60654-show-fewer-more-details-file-transfer-dialog-windows-10-a.html
+	
+	Turn Off "Make Microsoft Edge your default browser" prompt
+	https://www.tenforums.com/tutorials/48421-turn-off-make-microsoft-edge-default-browser-prompt.html
+	
+	Turn Off "News and interests" Icon on Taskbar
+	https://www.tenforums.com/tutorials/188597-add-remove-news-interests-icon-taskbar-windows-10-a.html
+	https://www.tenforums.com/tutorials/178178-how-enable-disable-news-interests-taskbar-windows-10-a.html
+
+Version 1.5 - 11-30-2021
+
+ - Added remove features batch file.
+ - Updated Win10_Look_And_Feel.reg
+
+Newly added.
+
+	Remove Meet Now icon from System Tray
+	https://www.tenforums.com/tutorials/165990-how-add-remove-meet-now-icon-taskbar-windows-10-a.html
+
+	Always show menus in applications
+
+	Change Windows Sound Scheme to No Sounds
+
+	Updated - Enable Remote Desktop
+
+	Change Control Panel icons to Large Icons
+
+Version 1.3.3 - 02-10-2021
+
+ - "Disable Windows Defender Exploit Protection Settings" listed twice in Win10_Security_Settings.reg. Duplicate removed.
+ - Updated Windows Build Cheat Sheet v0.06.html
+ - Updated Ten Forums Tutorials.pdf
+ - Changed from enabled to disabled for "Turn on get updates from Microsoft and LAN".
+
+Version 1.3.2 - 
+
+ - Fixed spacing on URL for "Disable Lock the Taskbar"
+ - Fixed missing key path for "Turn Off Windows Welcome Experience"
+ - Fixed missing key path for "Turn Off "Get tips, tricks, and suggestions as you use Windows""
+ - Updated title for "Add Right Click "Open PowerShell window here as administrator""
+ - Updated title for "Add Open command (CMD) window here with right click"
+ - Added Windows Build Cheat Sheet v0.04.html
+ - Updated Ten Forums Tutorials.pdf
+
+Version 1.3.1 - 01-03-2021
+
+ - Fixed command in Win10_Remove_Bloat.ps1 to reinstall Windows apps.
+ - Disabled "Turn off Game Bar" in Win10_Look_And_Feel.reg.
+
+
+
+Version 1.3 - 01-01-2021
+
+Newly added.
+
+Disable AutoPlay for All Drives
+https://www.tenforums.com/tutorials/101962-enable-disable-autoplay-all-drives-windows.html
+
+Enable BSOD Automatic Restart
+https://www.tenforums.com/tutorials/69012-enable-disable-bsod-automatic-restart-windows-10-a.html
+
+Turn Off Cortana Voice Activation
+https://www.tenforums.com/tutorials/18418-how-turn-off-hey-cortana-voice-activation-windows-10-a.html
+
+Turn Off Cortana in Microsoft Edge
+https://www.tenforums.com/tutorials/6899-turn-off-cortana-microsoft-edge-windows-10-a.html
+
+Turn Off Cortana on your Lock Screen
+https://www.tenforums.com/tutorials/46494-enable-disable-cortana-lock-screen-windows-10-a.html
+
+Disable Cortana on Lock Screen #2
+https://www.tenforums.com/tutorials/46494-enable-disable-cortana-lock-screen-windows-10-a.html
+
+Turn on get updates from Microsoft and LAN
+https://www.tenforums.com/tutorials/4742-choose-how-windows-store-app-updates-downloaded-windows-10-a.html
+
+Remove Internet Explorer Desktop Icon from Current Account Only
+https://www.tenforums.com/tutorials/20486-add-remove-internet-explorer-desktop-icon-windows-10-a.html
+
+Turn Off Device Search History
+https://www.tenforums.com/tutorials/133365-how-turn-off-device-search-history-windows-10-a.html+
+
+Turn Off for Send Required Diagnostic and Usage Data
+https://www.tenforums.com/tutorials/7032-change-diagnostic-data-settings-windows-10-a.html
+
+Turn Off Windows Error Reporting for Current User
+https://www.tenforums.com/tutorials/107232-enable-disable-windows-error-reporting-windows-10-a.html
+
+Turn Off Windows Error Reporting for All Users
+https://www.tenforums.com/tutorials/107232-enable-disable-windows-error-reporting-windows-10-a.html
+
+Disable Windows Error Reporting for All Users
+https://www.tenforums.com/tutorials/107232-enable-disable-windows-error-reporting-windows-10-a.html
+
+Show Status Bar in File Explorer
+https://www.tenforums.com/tutorials/89247-hide-show-status-bar-file-explorer-windows-10-a.html
+
+Disable File History
+https://www.tenforums.com/tutorials/64728-enable-disable-file-history-windows-10-a.html
+
+Turn On Display File Size Info in Folder Tips
+https://www.tenforums.com/tutorials/71325-turn-off-folder-tips-display-file-size-info-windows-10-a.html
+
+Turn On Fast Startup
+https://www.tenforums.com/tutorials/4189-turn-off-fast-startup-windows-10-a.html
+
+Disable Windows Game Recording and Broadcasting
+https://www.tenforums.com/tutorials/51180-enable-disable-windows-game-recording-broadcasting-windows-10-a.html
+
+Turn Off Game Mode Notifications
+https://www.tenforums.com/tutorials/75954-turn-off-game-mode-notifications-windows-10-a.html
+
+Turn On Game Mode
+https://www.tenforums.com/tutorials/75936-turn-off-game-mode-windows-10-a.html
+
+Remove Only 3D Objects Folder in This PC
+https://www.tenforums.com/tutorials/6015-add-remove-folders-pc-windows-10-a.html
+
+Turn Off Game Bar Tips
+https://www.tenforums.com/tutorials/76094-turn-off-game-bar-tips-windows-10-a.html
+
+Add "Cleanup" to Context Menu of Drives
+https://www.tenforums.com/tutorials/73739-cleanup-add-context-menu-windows-10-a.html
+
+Turn Off Showing Notifications on Lock Screen
+https://www.tenforums.com/tutorials/31116-turn-off-lock-screen-notifications-windows-10-a.html
+
+Add "Open file location" and "Open folder location" Context Menu
+https://www.tenforums.com/tutorials/31416-open-location-context-menu-add-remove-windows-10-a.html
+
+Turn On Clear Virtual Memory Pagefile at Shutdown
+https://www.tenforums.com/tutorials/77773-clear-virtual-memory-pagefile-shutdown-windows-10-a.html
+
+To Turn Off Play Sound for My People Pop
+https://www.tenforums.com/tutorials/84725-turn-off-play-sound-my-people-pop-windows-10-a.html
+
+To Turn Off Show My People Pops on People Bar
+https://www.tenforums.com/tutorials/84717-turn-off-show-my-people-pops-windows-10-a.html
+
+Turn Off Automatic Map Updates
+https://www.tenforums.com/tutorials/52868-turn-off-automatic-updates-offline-maps-windows-10-a.html
+
+Remove OneDrive from Navigation Pane of Current User
+https://www.tenforums.com/tutorials/4818-add-remove-onedrive-navigation-pane-windows-10-a.html
+
+Disable Syncing Other Windows Settings
+https://www.tenforums.com/tutorials/117908-enable-disable-syncing-other-windows-settings-windows-10-a.html
+
+Disable Syncing Passwords
+https://www.tenforums.com/tutorials/117899-enable-disable-syncing-passwords-windows-10-sync-your-settings.html
+
+Disable Syncing Theme
+https://www.tenforums.com/tutorials/117903-enable-disable-syncing-theme-windows-10-sync-your-settings.html
+
+Disable Timeline
+https://www.tenforums.com/tutorials/101852-enable-disable-timeline-windows-10-a.html
+
+Turn Off TruePlay
+https://www.tenforums.com/tutorials/101525-turn-off-trueplay-gaming-windows-10-a.html
+
+Disable Live Tile Notifications on Start 
+https://www.tenforums.com/tutorials/50834-enable-disable-live-tiles-start-windows-10-a.html
+
+Disable Scan Network Files with Windows Defender Antivirus
+https://www.tenforums.com/tutorials/152869-how-enable-scan-network-files-windows-defender-windows-10-a.html
+
+Disable Use of Windows Hello Biometrics
+https://www.tenforums.com/tutorials/117987-enable-disable-windows-hello-biometrics-windows-10-a.html
+
+Remove Only Documents Folder in This PC
+https://www.tenforums.com/tutorials/6015-add-remove-folders-pc-windows-10-a.html
+
+Remove Only Music Folder in This PC
+https://www.tenforums.com/tutorials/6015-add-remove-folders-pc-windows-10-a.html
+
+Remove Only Pictures Folder in This PC
+https://www.tenforums.com/tutorials/6015-add-remove-folders-pc-windows-10-a.html
+
+Remove Only Videos Folder in This PC
+https://www.tenforums.com/tutorials/6015-add-remove-folders-pc-windows-10-a.html
+
+
+
+Newly Added, but disabled in REG file.
+
+Add Linux to Navigation Pane of Current User
+https://www.tenforums.com/tutorials/127506-add-remove-linux-navigation-pane-windows-10-a.html
+
+Add Right Click "Open Bash window here" Context Menu
+https://www.tenforums.com/tutorials/60125-open-bash-window-here-context-menu-add-windows-10-a.html
+
+Add "Take Ownership" to Context Menu
+https://www.tenforums.com/tutorials/3841-add-take-ownership-context-menu-windows-10-a.html
+
+
+
+UPDATED
+
+Never Combine Taskbar Buttons on Other Taskbars
+https://www.tenforums.com/tutorials/25732-always-sometimes-never-combine-taskbar-buttons-windows-10-a.html
+
+Remove Only 3D Objects Folder in This PC
+https://www.tenforums.com/tutorials/6015-add-remove-folders-pc-windows-10-a.html
+
+Turn Off Show My People Pops on People Bar (My People is no longer being developed in Windows 10 version 1909 and higher. It may be removed in a future update.)
+https://www.tenforums.com/tutorials/84717-turn-off-show-my-people-pops-windows-10-a.html
+
+Turn Off Play Sound for My People Pop (My People is no longer being developed in Windows 10 version 1909 and higher. It may be removed in a future update.)
+https://www.tenforums.com/tutorials/84725-turn-off-play-sound-my-people-pop-windows-10-a.html
+
+Remove People Button from Taskbar (My People is no longer being developed in Windows 10 version 1909 and higher. It may be removed in a future update.)
+https://www.tenforums.com/tutorials/83096-add-remove-people-button-taskbar-windows-10-a.html
+
+Disable People Bar on Taskbar (My People is no longer being developed in Windows 10 version 1909 and higher. It may be removed in a future update.)
+https://www.tenforums.com/tutorials/104877-enable-disable-people-bar-taskbar-windows-10-a.html
+
+Turn Search online and include web results (This tutorial will only work in Windows 10 version 1909, 2004 and higher.)
+https://www.tenforums.com/tutorials/25016-turn-off-search-online-include-web-results-windows-10-a.html
+
+Turn Off Device Search History (Turning off device search history does not clear your device search history.)
+https://www.tenforums.com/tutorials/133365-how-turn-off-device-search-history-windows-10-a.html
+
+Turn off Get even more out of Windows Suggestions (This will only work with Windows 10 build 18945 and higher.)
+https://www.tenforums.com/tutorials/137645-turn-off-get-even-more-out-windows-suggestions-windows-10-a.html
+
+Disable Location Service (Starting with Windows 10 build 19582.1000, the Set time zone automatically toggle will now be greyed out if location has been disabled.)
+https://www.tenforums.com/tutorials/13225-turn-off-location-services-windows-10-a.html
+
+
+
+REMOVED
+
+Contradicts setting "Turn Off for Send Required Diagnostic and Usage Data"
+
+Send Security Only Diagnostic and Usage Data (This only works on enterprise and education editions. Use data value 1 for other editions.) 
+https://www.tenforums.com/tutorials/7032-change-diagnostic-data-settings-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection]
+"AllowTelemetry"=dword:00000000
+
+No longer works starting with Windows 10 build 10147 on June 18th 2015.
+
+Turn Off Start Menu and Taskbar Blur
+https://www.tenforums.com/tutorials/5763-turn-off-blur-start-menu-taskbar-windows-10-a.html
+[HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize]
+"EnableBlurBehind"=dword:00000000
+
+Turn Off Show Dates in Conversational Format in File Explorer (Mentioned in the Windows 10 build 18890 release notes, Microsoft has decided not to roll out Friendly Dates to users as part of the 19H1 release.)
+https://www.tenforums.com/tutorials/121844-turn-off-friendly-dates-windows-10-file-explorer.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"FriendlyDates"=dword:00000000
+
+Turn Off Cortana Listening Mode Keyboard Shortcut (No longer valid starting with Windows 10 version 2004.)
+https://www.tenforums.com/tutorials/74284-turn-off-cortana-listen-keyboard-shortcut-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"VoiceShortcut"=dword:00000000
+
+
+
+FIXED
+
+Turn Off Play Windows Startup Sound (tutorial REG file download is incorrect)
+https://www.tenforums.com/tutorials/61302-turn-off-startup-sound-windows-10-a.html

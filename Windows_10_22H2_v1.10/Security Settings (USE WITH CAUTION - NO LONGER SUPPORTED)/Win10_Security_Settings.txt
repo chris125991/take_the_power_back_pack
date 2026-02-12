@@ -1,0 +1,193 @@
+Windows Registry Editor Version 5.00
+
+; Updated for 1809 on 09-17-2019. Tested on Enterprise x64.
+; As of 01/01/2021 these settings are no longer supported and have not been tested since 09/17/2019.
+
+; Enable Enhanced Anti-Spoofing for Windows Hello Face Authentification
+; https://www.tenforums.com/tutorials/101265-enable-enhanced-anti-spoofing-windows-hello-face-authentification.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Biometrics\FacialFeatures]
+"EnhancedAntiSpoofing"=dword:00000001
+
+; Turn Off Automatic Device Driver Installation via Windows Update
+; https://www.tenforums.com/tutorials/15989-turn-off-device-driver-automatic-installation-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata]
+"PreventDeviceMetadataFromNetwork"=dword:00000001
+
+; Disable Including Driver Updates in Windows Update
+; https://www.tenforums.com/tutorials/48277-enable-disable-driver-updates-windows-update-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Update]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Update]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdate]
+"value"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+; Disable Windows Defender PUA Protection
+; https://www.tenforums.com/tutorials/32236-enable-disable-windows-defender-pua-protection-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"PUAProtection"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\MpEngine]
+"MpEnablePus"=dword:00000000
+
+; Turn off Windows Defender Block Suspicious Behaviors
+; https://www.tenforums.com/tutorials/113031-turn-windows-defender-block-suspicious-behaviors-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR]
+"EnableASRConsumers"=dword:00000000
+
+; Hide (dismiss) Account protection in Windows Security
+; https://www.tenforums.com/tutorials/105476-hide-account-protection-windows-security-windows-10-a.html
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows Security Health\State]
+"AccountProtection_MicrosoftAccount_Disconnected"=dword:00000001
+
+; Hide Virus and Threat Protection in Windows Security
+; https://www.tenforums.com/tutorials/99493-hide-virus-threat-protection-windows-security-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Virus and threat protection]
+"UILockdown"=dword:00000001
+
+; Hide Firewall and Network Protection in Windows Security
+; https://www.tenforums.com/tutorials/99486-hide-firewall-network-protection-windows-security-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Firewall and network protection]
+"UILockdown"=dword:00000001
+
+; Hide Family options in Windows Security
+https://www.tenforums.com/tutorials/99479-hide-family-options-windows-security-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Family options]
+"UILockdown"=dword:00000001
+
+; Turn Off Windows Defender Antivirus
+https://www.tenforums.com/tutorials/5918-turn-off-windows-defender-antivirus-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"DisableAntiSpyware"=dword:00000001
+
+; Remove "Scan with Windows Defender" Context Menu
+; https://www.tenforums.com/tutorials/18145-add-remove-scan-windows-defender-context-menu-windows-10-a.html
+[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\EPP]
+
+[-HKEY_CLASSES_ROOT\CLSID\{09A47860-11B0-4DA5-AFA5-26D86198A780}]
+
+[-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\EPP]
+
+[-HKEY_CLASSES_ROOT\Drive\shellex\ContextMenuHandlers\EPP]
+
+; Disable Windows Defender Block at First Sight
+; https://www.tenforums.com/tutorials/70329-enable-windows-defender-block-first-sight-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet]
+"DisableBlockAtFirstSeen"=dword:00000001
+
+; Set Block at First Sight to Default "Not Configured" in Group Policy
+; https://www.tenforums.com/tutorials/70329-enable-windows-defender-block-first-sight-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection]
+"DisableIOAVProtection"=-
+"DisableRealtimeMonitoring"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet]
+"DisableBlockAtFirstSeen"=-
+"SpynetReporting"=-
+"SubmitSamplesConsent"=-
+
+; Disable Windows Defender Real-time Protection
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection]
+"DisableRealtimeMonitoring"=dword:00000001
+
+; Disable Scan Network Files with Windows Defender Antivirus (tutorial has wrong value)
+; https://www.tenforums.com/tutorials/152869-how-enable-scan-network-files-windows-defender-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Scan]
+"DisableScanningNetworkFiles"=dword:00000001
+
+; Disable Windows Defender Security Center
+; https://www.tenforums.com/tutorials/110230-enable-disable-windows-security-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SecurityHealthService]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wscsvc]
+"Start"=dword:00000004
+
+; Disable Windows Defender Exploit Protection Settings
+; https://www.tenforums.com/tutorials/105533-enable-disable-windows-defender-exploit-protection-settings.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\App and Browser protection]
+"DisallowExploitProtectionOverride"=dword:00000001
+
+; Set Windows Update to Never Notify or Check for Updates
+; https://www.tenforums.com/tutorials/8013-enable-disable-windows-update-automatic-updates-windows-10-a.html
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000001
+
+; Turn On or Off Core Isolation Memory Integrity for Virtual Machines
+; https://www.tenforums.com/tutorials/104025-turn-off-core-isolation-memory-integrity-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity]
+"Enabled"=dword:00000000
+
+; Disable Downloaded Files from being Blocked (By not preserving the zone information, Windows cannot make appropriate risks assessments.)
+; https://www.tenforums.com/tutorials/85418-disable-downloaded-files-being-blocked-windows.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments]
+"SaveZoneInformation"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Attachments]
+"SaveZoneInformation"=dword:00000001
+
+; Disable SmartScreen Filter for Microsoft Edge
+; https://www.tenforums.com/tutorials/66516-enable-disable-smartscreen-filter-microsoft-edge-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
+"EnabledV9"=dword:00000000
+
+; Turn Off SmartScreen for Microsoft Edge (It is recommended to leave SmartScreen Filter turned on in Microsoft Edge to better protect your PC.)
+; https://www.tenforums.com/tutorials/5520-turn-off-smartscreen-microsoft-edge-windows-10-a.html
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\PhishingFilter]
+"EnabledV9"=dword:00000000
+"PreventOverride"=dword:00000000
+
+; Disable Windows Defender Exploit Guard Controlled Folder Access
+; https://www.tenforums.com/tutorials/113380-enable-disable-controlled-folder-access-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Controlled Folder Access]
+"EnableControlledFolderAccess"=dword:00000000
+
+; Remove "Turn On or Off Controlled folder access" from Desktop Context Menu
+; https://www.tenforums.com/tutorials/114389-add-turn-off-controlled-folder-access-context-menu-windows-10-a.html
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\ControlledFolderAccess]
+
+; Disable Non-critical Notifications from Windows Security
+; https://www.tenforums.com/tutorials/105486-enable-disable-notifications-windows-security-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications]
+"DisableEnhancedNotifications"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]
+"DisableEnhancedNotifications"=dword:00000001
+
+; Disable All Notifications from Windows Security
+; https://www.tenforums.com/tutorials/105486-enable-disable-notifications-windows-security-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender Security Center\Notifications]
+"DisableNotifications"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]
+"DisableNotifications"=dword:00000001
+
+; Hide Device security in Windows Security
+; https://www.tenforums.com/tutorials/105478-hide-device-security-windows-security-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Device security]
+"UILockdown"=dword:00000001
+
+; Disable Scan Archive Files by Windows Defender
+; https://www.tenforums.com/tutorials/70549-enable-disable-scan-archive-files-windows-defender-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Scan]
+"DisableArchiveScanning"=-
+
+; Disable Scan Mapped Network Drives during Full Scan
+; https://www.tenforums.com/tutorials/70530-enable-windows-defender-scan-mapped-network-drives-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Scan]
+"DisableScanningMappedNetworkDrivesForFullScan"=-
+
+; Disable Scan Removable Drives during Full Scan
+; https://www.tenforums.com/tutorials/70503-enable-windows-defender-scan-removable-drives-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Scan]
+"DisableRemovableDriveScanning"=-

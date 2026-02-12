@@ -1,0 +1,328 @@
+Windows Registry Editor Version 5.00
+
+; Updated for Windows 11 25H2 on 01-23-2026. Tested on Enterprise x64.
+
+; Disable Advertising ID for Personalized Ads in Apps
+;https://www.elevenforum.com/t/enable-or-disable-advertising-id-for-relevant-ads-in-apps-in-windows-11.3730/
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo]
+"DisabledByGroupPolicy"=dword:00000001
+
+;Change Feedback Frequency to Never
+;https://www.elevenforum.com/t/change-feedback-frequency-in-windows-11.7614/
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Siuf\Rules]
+"NumberOfSIUFInPeriod"=dword:00000000
+"PeriodInNanoSeconds"=-
+
+;Disable Website Access to Language List - "Let websites show me locally relevant content by accessing my language list"
+;https://www.elevenforum.com/t/enable-or-disable-website-access-to-language-list-in-windows-11.3733/
+[HKEY_CURRENT_USER\Control Panel\International\User Profile]
+"HttpAcceptLanguageOptOut"=dword:00000001
+
+; Disable Widgets on Lock Screen
+; https://www.elevenforum.com/t/enable-or-disable-widgets-on-lock-screen-in-windows-11.33140/
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lock Screen]
+"LockScreenWidgetsEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Dsh]
+"DisableWidgetsOnLockScreen"=dword:00000000
+
+; Disable Bing "Trending Searches" Suggestions in Address Bar of Microsoft Edge
+; https://www.elevenforum.com/t/enable-or-disable-bing-trending-searches-suggestions-in-address-bar-of-microsoft-edge.33615/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"AddressBarTrendingSuggestEnabled"=dword:00000000
+
+; Disable Search Cloud Content from Apps
+; https://www.elevenforum.com/t/enable-or-disable-search-cloud-content-from-apps-in-windows-11.35409/
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SearchSettings]
+"IsGlobalFileSearchProviderToggleEnabled"=dword:00000000
+
+; Turn Off "Show account-related notifications" on Start Menu
+; https://www.elevenforum.com/t/enable-or-disable-notification-badging-for-microsoft-accounts-on-start-menu-in-windows-11.14645/
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_AccountNotifications"=dword:00000000
+
+; Turn Off Website Access to Language List
+; https://www.elevenforum.com/t/enable-or-disable-website-access-to-language-list-in-windows-11.3733/
+[HKEY_CURRENT_USER\Control Panel\International\User Profile]
+"HttpAcceptLanguageOptOut"=dword:00000001
+
+; Turn Off App Launch Tracking
+; https://www.elevenforum.com/t/enable-or-disable-app-launch-tracking-in-windows-11.3727/
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackProgs"=dword:00000000
+
+; Turn Off "Show recommendations for tips, shortcuts, new apps, and more" on Start
+; https://www.elevenforum.com/t/enable-or-disable-recommended-tips-shortcuts-new-apps-and-more-on-start-menu-in-windows-11.14346/
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_IrisRecommendations"=dword:00000000
+
+; Turn Off Find My Device
+; https://www.elevenforum.com/t/enable-or-disable-find-my-device-in-windows-11.3861/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MdmCommon\SettingValues]
+"LocationSyncEnabled"=dword:00000000
+
+; Disable Find My Device
+; https://www.elevenforum.com/t/enable-or-disable-find-my-device-in-windows-11.3861/
+
+; Change Feedback Frequency to Never
+; https://www.elevenforum.com/t/change-feedback-frequency-in-windows-11.7614/
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Siuf\Rules]
+"NumberOfSIUFInPeriod"=dword:00000000
+"PeriodInNanoSeconds"=-
+
+; Disable Feedback Frequency
+; https://www.elevenforum.com/t/change-feedback-frequency-in-windows-11.7614/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"DoNotShowFeedbackNotifications"=dword:00000001
+
+; Disable Advertising ID for Personalized Ads in Apps
+; https://www.elevenforum.com/t/enable-or-disable-advertising-id-for-personalized-ads-in-apps-in-windows-11.3730/
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo]
+"DisabledByGroupPolicy"=dword:00000001
+
+; Turn On Receive Updates for Other Microsoft Products
+; https://www.elevenforum.com/t/turn-on-or-off-updates-for-other-microsoft-products-in-windows-11.2849/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"AllowMUUpdateService"=dword:00000001
+
+; Turn On "Get the latest updates as soon as they're available"
+; https://www.elevenforum.com/t/enable-or-disable-get-latest-updates-as-soon-as-available-in-windows-11.13821/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"IsContinuousInnovationOptedIn"=dword:00000001
+
+; Disable "Rewrite with Copilot" in Microsoft Edge for All Users
+; https://www.elevenforum.com/t/enable-or-disable-rewrite-with-copilot-in-microsoft-edge.24752/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"ComposeInlineEnabled"=dword:00000000
+
+; Disable and Remove Copilot for All Users
+; https://www.elevenforum.com/t/completely-disable-and-remove-copilot-in-windows-11.23264/
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\WindowsCopilot]
+"TurnOffWindowsCopilot"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot]
+"TurnOffWindowsCopilot"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"HubsSidebarEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"DisableSearchBoxSuggestions"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableSearchBoxSuggestions"=dword:00000001
+
+; Disable Send Activity History to Microsoft
+; https://www.elevenforum.com/t/enable-or-disable-send-activity-history-to-microsoft-in-windows-11.7810/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"UploadUserActivities"=dword:00000000
+
+; Disable Store Activity History on Device
+; https://www.elevenforum.com/t/enable-or-disable-store-activity-history-on-device-in-windows-11.7812/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"PublishUserActivities"=dword:00000000
+
+; Disable and Force Automatic sample submission to "Never send" 
+; https://www.elevenforum.com/t/enable-or-disable-automatic-sample-submission-for-microsoft-defender-antivirus-in-windows-11.4010/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet]
+"SubmitSamplesConsent"=dword:00000002
+
+; Turn Off Camera Access
+; https://www.elevenforum.com/t/enable-or-disable-apps-access-to-camera-in-windows-11.17140/
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
+;"Value"="Deny"
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
+;"Value"="Deny
+
+; Turn Off Desktop Apps Access to Camera
+; https://www.elevenforum.com/t/enable-or-disable-apps-access-to-camera-in-windows-11.17140/
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\NonPackaged]
+;"Value"="Deny"
+
+; Disable Camera Access
+; https://www.elevenforum.com/t/enable-or-disable-apps-access-to-camera-in-windows-11.17140/
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+;"LetAppsAccessCamera"=dword:00000002
+;"LetAppsAccessCamera_UserInControlOfTheseApps"=hex(7):00,00
+;"LetAppsAccessCamera_ForceAllowTheseApps"=hex(7):00,00
+;"LetAppsAccessCamera_ForceDenyTheseApps"=hex(7):00,00
+
+; Turn Off Microphone Access for All Users
+; https://www.elevenforum.com/t/enable-or-disable-apps-access-to-microphone-in-windows-11.17117/
+; [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone]
+; "Value"="Deny"
+
+; [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone]
+;"Value"="Deny"
+
+; Turn Off Cloud Content Search
+; https://www.elevenforum.com/t/enable-or-disable-cloud-content-search-in-windows-11.5378/
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SearchSettings]
+"IsMSACloudSearchEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SearchSettings]
+"IsAADCloudSearchEnabled"=dword:00000000
+
+; Disable Cloud Content Search
+; https://www.elevenforum.com/t/enable-or-disable-cloud-content-search-in-windows-11.5378/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCloudSearch"=dword:00000000
+
+; Turn Off Tailored Experiences
+; https://www.elevenforum.com/t/enable-or-disable-tailored-experiences-in-windows-11.7554/
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Privacy]
+"TailoredExperiencesWithDiagnosticDataEnabled"=dword:00000000
+
+; Disable Tailored Experiences
+; https://www.elevenforum.com/t/enable-or-disable-tailored-experiences-in-windows-11.7554/
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\CloudContent]
+"DisableTailoredExperiencesWithDiagnosticData"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\CloudContent]
+"DisableTailoredExperiencesWithDiagnosticData"=dword:00000001
+
+; Disable Shared Experiences
+; https://www.elevenforum.com/t/enable-or-disable-shared-experiences-in-windows-11.3859/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableCdp"=dword:00000000
+
+; Turn off Allow downloads from other PCs
+; https://www.elevenforum.com/t/turn-on-or-off-windows-update-delivery-optimization-in-windows-11.3136/
+[HKEY_USERS\S-1-5-20\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Settings]
+"DownloadMode"=dword:00000000
+
+; Disable Delivery Optimization and Turn Off "Allow downloads from other PCs" 
+; https://www.elevenforum.com/t/turn-on-or-off-windows-update-delivery-optimization-in-windows-11.3136/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]
+"DODownloadMode"=dword:00000000
+
+; Turn Off and Disable Diagnostic Data
+; https://www.elevenforum.com/t/change-diagnostic-data-settings-in-windows-11.2621/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000
+
+; Disable Facial Recognition Sign-in Option
+; https://www.elevenforum.com/t/enable-or-disable-facial-recognition-sign-in-option-in-windows-11.19299/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\Credential Providers\{8AF662BF-65A0-4D0A-A540-A338A999D36F}]
+"Disabled"=dword:00000001
+
+; Disable File History Feature for All Users
+; https://www.elevenforum.com/t/enable-or-disable-file-history-in-windows-11.1395/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\FileHistory]
+"Disabled"=dword:00000001
+
+; Disable Fingerprint Sign-in Option for Local Accounts
+; https://www.elevenforum.com/t/enable-or-disable-fingerprint-sign-in-option-in-windows-11.19305/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\Credential Providers\{BEC09223-B018-416D-A0AC-523971B639F5}]
+"Disabled"=dword:00000001
+
+; Turn Off Location Services
+; https://www.elevenforum.com/t/enable-or-disable-location-services-in-windows-11.3003/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
+"Value"="Deny"
+
+; Disable Passwordless Sign-in for Microsoft Accounts
+; https://www.elevenforum.com/t/enable-or-disable-passwordless-sign-in-for-microsoft-accounts-in-windows-11.834/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device]
+"DevicePasswordLessBuildVersion"=dword:00000000
+
+; Disable Show Account Email Address on Sign-in Screen for All Users
+; https://www.elevenforum.com/t/enable-or-disable-show-account-email-address-on-sign-in-screen-in-windows-11.16394/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"BlockUserFromShowingAccountDetailsOnSignin"=dword:00000001
+
+; Disable and Force Automatic sample submission to "Never send"
+; https://www.elevenforum.com/t/enable-or-disable-automatic-sample-submission-for-microsoft-defender-antivirus-in-windows-11.4010/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet]
+"SubmitSamplesConsent"=dword:00000002
+
+; Disable Show Lock Screen Background on Sign-in Screen
+; https://www.elevenforum.com/t/enable-or-disable-show-lock-screen-background-on-sign-in-screen-in-windows-11.927/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"DisableLogonBackgroundImage"=dword:00000001
+
+; Turn Off Search Highlights
+; https://www.elevenforum.com/t/enable-or-disable-search-highlights-in-windows-11.5735/
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SearchSettings]
+"IsDynamicSearchBoxEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"EnableDynamicContentInWSB"=dword:00000000
+
+; Remove Sleep from Power menu
+; https://www.elevenforum.com/t/add-or-remove-sleep-on-power-menu-in-windows-11.12373/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings]
+"ShowSleepOption"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"ShowSleepOption"=dword:00000000
+
+; Remove Recommended Section from Start Menu for All Users
+; https://www.elevenforum.com/t/remove-recommended-section-from-start-menu-in-windows-11.21508/
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"HideRecommendedSection"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"HideRecommendedSection"=dword:00000001
+
+; Disable Show Recommended Websites on Start Menu for All Users
+; https://www.elevenforum.com/t/add-or-remove-recommended-websites-on-start-menu-in-windows-11.10667/
+[HKEY_CURRENT_USER\Softare\Policies\Microsoft\Windows\Explorer]
+"HideRecommendedPersonalizedSites"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"HideRecommendedPersonalizedSites"=dword:00000001
+
+; Disable Show Recently Added Apps on Start Menu for All Users
+; https://www.elevenforum.com/t/add-or-remove-recently-added-apps-on-start-menu-in-windows-11.1157/
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"HideRecentlyAddedApps"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"HideRecentlyAddedApps"=dword:00000001
+
+; Turn Off "Show recently opened items in Start, Jump Lists, and File Explorer"
+; https://www.elevenforum.com/t/enable-or-disable-recent-items-in-start-jump-lists-file-explorer-in-windows-11.1161/
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackDocs"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRecentDocsHistory"=dword:00000001
+
+; Disable Acrylic Blur Effect on Sign-in Screen Background
+; https://www.elevenforum.com/t/enable-or-disable-acrylic-blur-effect-on-sign-in-screen-background-in-windows-11.1117/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"DisableAcrylicBackgroundOnLogon"=dword:00000001
+
+; Always Hide Most Used apps list on Start Menu for All Users
+; https://www.elevenforum.com/t/hide-or-show-most-used-apps-list-on-start-menu-in-windows-11.761/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"ShowOrHideMostUsedApps"=dword:00000002
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"ShowOrHideMostUsedApps"=-
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoStartMenuMFUprogramsList"=-
+"NoInstrumentation"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoStartMenuMFUprogramsList"=-
+"NoInstrumentation"=-
+
+; Turn Off Recent Search History on this Device
+; https://www.elevenforum.com/t/enable-or-disable-recent-search-history-in-windows-11.5395/
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SearchSettings]
+"IsDeviceSearchHistoryEnabled"=dword:00000000
+
+; Disable Remote Assistance Connections to PC
+; https://www.elevenforum.com/t/enable-or-disable-remote-assistance-connections-in-windows-11.8117/
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
+"fAllowToGetHelp"=dword:00000000

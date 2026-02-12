@@ -1,0 +1,273 @@
+Updated for Windows 11 25H2.
+
+Version 1.3 - 01-26-2026
+
+Updated
+
+	-Updated Ten Forums Tutorials XLS (01-21-2026).
+	
+Newly added
+
+	Win11_Privacy_Settings.reg
+		-Disable Advertising ID for Personalized Ads in Apps
+		 https://www.elevenforum.com/t/enable-or-disable-advertising-id-for-relevant-ads-in-apps-in-windows-11.3730/
+		 
+		-Change Feedback Frequency to Never
+		 https://www.elevenforum.com/t/change-feedback-frequency-in-windows-11.7614/
+		 
+		-Disable Website Access to Language List
+		 https://www.elevenforum.com/t/enable-or-disable-website-access-to-language-list-in-windows-11.3733/
+		 
+	Win11_Look_And_Feel.reg
+		-Set Control Panel icons to large
+	
+		-Disable Core Isolation Memory Integrity
+		 https://www.elevenforum.com/t/enable-or-disable-core-isolation-memory-integrity-in-windows-11.4942/
+		 
+		-Disable Transparency Effects
+		 https://www.elevenforum.com/t/enable-or-disable-transparency-effects-in-windows-11.1110/
+		 
+		-Turn Off Enhance Pointer Precision
+		 https://www.elevenforum.com/t/turn-on-or-off-enhance-pointer-precision-in-windows-11.7327/
+		 
+		-Turn Off Notification Sounds
+		 https://www.elevenforum.com/t/turn-on-or-off-notification-sounds-in-windows-11.3534/
+
+Version 1.2 - 07-22-2025
+
+Newly added
+
+	Win11_Privacy_Settings.reg
+		-Disable Advertising ID for Personalized Ads in Apps
+		 https://www.elevenforum.com/t/enable-or-disable-advertising-id-for-personalized-ads-in-apps-in-windows-11.3730/
+		 
+		-Change Feedback Frequency to Never
+		 https://www.elevenforum.com/t/change-feedback-frequency-in-windows-11.7614/
+		 
+		-Disable Feedback Frequency
+		 https://www.elevenforum.com/t/change-feedback-frequency-in-windows-11.761
+		 
+		-Turn Off Find My Device
+		 https://www.elevenforum.com/t/enable-or-disable-find-my-device-in-windows-11.3861/
+		 
+		-Disable Find My Device
+		 https://www.elevenforum.com/t/enable-or-disable-find-my-device-in-windows-11.3861/
+		 
+		-Turn Off "Show recommendations for tips, shortcuts, new apps, and more" on Start
+		 https://www.elevenforum.com/t/enable-or-disable-recommended-tips-shortcuts-new-apps-and-more-on-start-menu-in-windows-11.14346/
+		 
+		-Turn Off App Launch Tracking
+		 https://www.elevenforum.com/t/enable-or-disable-app-launch-tracking-in-windows-11.3727/
+		 
+		-Turn Off Website Access to Language List
+		 https://www.elevenforum.com/t/enable-or-disable-website-access-to-language-list-in-windows-11.3733/
+		 
+		-Turn Off "Show account-related notifications" on Start Menu
+		 https://www.elevenforum.com/t/enable-or-disable-notification-badging-for-microsoft-accounts-on-start-menu-in-windows-11.14645/
+		 
+		-Disable Search Cloud Content from Apps
+		https://www.elevenforum.com/t/enable-or-disable-search-cloud-content-from-apps-in-windows-11.35409/
+		
+		-Disable Bing "Trending Searches" Suggestions in Address Bar of Microsoft Edge
+		https://www.elevenforum.com/t/enable-or-disable-bing-trending-searches-suggestions-in-address-bar-of-microsoft-edge.33615/
+		
+		-Disable Widgets on Lock Screen
+		https://www.elevenforum.com/t/enable-or-disable-widgets-on-lock-screen-in-windows-11.33140/
+ 
+		 
+	Win11_Look_And_Feel.reg
+		-Turn Off Transparency Effects
+		 https://www.elevenforum.com/t/enable-or-disable-transparency-effects-in-windows-11.1110/
+		 
+		 -Turn Off Core Isolation Memory Integrity (Needed for the game The Finals)
+		 https://www.elevenforum.com/t/enable-or-disable-core-isolation-memory-integrity-in-windows-11.4942/
+		 
+		-Use Enhanced Mode for Search Indexer
+		 https://www.elevenforum.com/t/turn-on-or-off-enhanced-mode-for-search-indexer-in-windows-11.2941/
+		 
+		-Disable Click to Do
+		https://www.elevenforum.com/t/enable-or-disable-click-to-do-in-windows-11.35166/
+		
+		-Disable Microsoft Edge Surf Game
+		https://www.elevenforum.com/t/enable-or-disable-microsoft-edge-surf-game-in-windows-11.33460/
+		
+		-Disable "Show more options" context menu
+		https://www.elevenforum.com/t/disable-show-more-options-context-menu-in-windows-11.1589/
+
+ 	-Added PowerShell directory
+	
+Updated
+
+	-Updated Ten Forums Tutorials XLS.	 
+
+Version 1.1 - 03-24-2025
+
+Newly added
+
+	-Added Disable Scheduled Task directory
+	-Added Disable Services directory
+	
+	Win10_Look_And_Feel.reg
+		-Added "Disable First Run Experience in Microsoft Edge Chromium".
+		-Added "Enable Remote Desktop Connections".
+	  
+	remove_features.bat.
+		-Remove Recall feature.
+
+Updated
+
+	-Version numbers have been removed from within the REG, BAT, TXT and PS1 files in favor of using last updated dates.
+	-Updated list of features in WindowsOptionalFeature.txt.
+	-Updated list of apps in Win11_Remove_Bloat.txt.
+	-Updated list of features in Remove_Features.txt.
+	-Updated Ten Forums Tutorials XLS.
+	-Commented out any Xbox services so they are not disabled in Disable_Services.bat.
+	
+	Win11_Look_And_Feel.reg (Disabled)
+		-Turn Off Notifications
+		 https://www.elevenforum.com/t/turn-on-or-off-notifications-in-windows-11.821/
+
+		- Turn Off Startup App Notification
+		 https://www.elevenforum.com/t/enable-or-disable-startup-app-notification-in-windows-11.9995/
+	
+		-Disable Notification Center for All Users
+		 https://www.elevenforum.com/t/enable-or-disable-notification-center-in-windows-11.6187/
+
+
+Version 1.0 - 12-09-2024
+
+Newly added
+
+	Win11_Look_And_Feel.reg
+		-Disable and Remove Copilot for All Users
+		 https://www.elevenforum.com/t/completely-disable-and-remove-copilot-in-windows-11.23264/
+	
+		-Turn Off Show Taskbar on All Displays
+		 https://www.elevenforum.com/t/enable-or-disable-show-taskbar-on-all-displays-in-windows-11.468/
+	
+		-Disable "Show more options" context menu
+		 https://www.elevenforum.com/t/disable-show-more-options-context-menu-in-windows-11.1589/
+	
+		-Turn On End Task in Taskbar by Right Click
+		 https://www.elevenforum.com/t/enable-or-disable-end-task-in-taskbar-by-right-click-in-windows-11.14325/
+	
+		-Disable Show Shortened Time and Date on Taskbar
+		 https://www.elevenforum.com/t/enable-or-disable-show-shortened-time-and-date-on-taskbar-in-windows-11.26235/
+	
+		-Enable Verbose mode
+		 https://www.xda-developers.com/registry-tweaks-for-windows-11/
+
+		-Disable Network Throttling
+		 https://www.xda-developers.com/registry-tweaks-for-windows-11/
+
+		-Disable Power Throttling
+		 https://www.xda-developers.com/registry-tweaks-for-windows-11/
+	
+		-Never "Combine Taskbar buttons and Hide Labels on Other Taskbars" 
+		 https://www.elevenforum.com/t/always-or-never-combine-taskbar-buttons-and-hide-labels-in-windows-11.15135/
+	
+		-Adjust for best performance (Added but disabled.)
+	
+	
+Removed
+
+	Win11_Look_And_Feel.reg
+		-Remove Widgets Button on Taskbar (As of June 2024 this no longer works. Use link and Option 1 instead.)
+		 https://www.elevenforum.com/t/add-or-remove-widgets-button-on-taskbar-in-windows-11.32/
+	
+		-Turn On Display Full Path in Title Bar of File Explorer (Does not work in REG file. Use link and Option 3.)
+		 https://www.elevenforum.com/t/turn-on-or-off-display-full-path-in-title-bar-of-file-explorer-in-windows-11.3585/
+
+		-Change UAC Behavior for Administrators to "Elevate without prompting" (Duplicate of Disable UAC for Built-in Administrator.)
+		 https://www.elevenforum.com/t/change-uac-behavior-for-administrators-in-windows-11.14782/
+	
+		-Restore All Legacy Folder Options (Starting with Windows 11 build 23486, Microsoft restored these legacy settings back to Folder Options based on feedback.)
+		 https://www.elevenforum.com/t/restore-legacy-folder-options-in-windows-11.15744/
+	
+		-Remove 3D Objects folder from This PC (No longer works.)
+		 https://www.elevenforum.com/t/add-or-remove-folders-under-this-pc-in-file-explorer-in-windows-11.7122/
+
+		-Remove Documents folder from This PC (No longer works.)
+		 https://www.elevenforum.com/t/add-or-remove-folders-under-this-pc-in-file-explorer-in-windows-11.7122/
+
+		-Remove Music folder from This PC (No longer works.)
+		 https://www.elevenforum.com/t/add-or-remove-folders-under-this-pc-in-file-explorer-in-windows-11.7122/
+
+		-Remove Pictures folder from This PC (No longer works.)
+		 https://www.elevenforum.com/t/add-or-remove-folders-under-this-pc-in-file-explorer-in-windows-11.7122/
+
+		-Remove Videos folder from This PC (No longer works.)
+		 https://www.elevenforum.com/t/add-or-remove-folders-under-this-pc-in-file-explorer-in-windows-11.7122/
+	
+		-Specify "Hibernate" for Lid Close Action (Moved to Task Sequence to target laptops.)
+		https://www.elevenforum.com/t/change-lid-close-action-in-windows-11.3356/
+
+		-Add "Kill all not responding tasks" to Desktop context menu (Removed duplicate entry)
+		 https://www.elevenforum.com/t/add-kill-all-not-responding-tasks-context-menu-in-windows-11.8274/
+	
+		-Turn On "Get the latest updates as soon as they're available" (Moved to Win11_Privacy_Settings.reg)
+		 https://www.elevenforum.com/t/enable-or-disable-get-latest-updates-as-soon-as-available-in-windows-11.13821/
+	
+		-Disable Hibernate (Moved to task sequence to target desktops.)
+		 https://www.elevenforum.com/t/enable-or-disable-hibernate-in-windows-11.1894/
+	
+		-Turn Off Automatically Update Offline Maps (By the end of 2023, offline maps will no longer be available in the Maps app.)
+		 https://www.elevenforum.com/t/enable-or-disable-automatically-update-offline-maps-in-windows-11.10109/
+	
+	
+Updated
+
+	Win11_Look_And_Feel.reg
+		-Never "Combine Taskbar buttons and Hide Labels"
+		 https://www.elevenforum.com/t/always-or-never-combine-taskbar-buttons-and-hide-labels-in-windows-11.15135/
+	
+		-Restore Classic File Explorer with Ribbon for Current User
+		 https://www.elevenforum.com/t/restore-classic-file-explorer-with-ribbon-in-windows-11.620/
+	
+		-Always show icons, never thumbnails (Removed uneeded line.)
+
+	
+Newly added
+
+	Win11_Privacy_Settings.reg
+		-Disable "Rewrite with Copilot" in Microsoft Edge for All Users
+		 https://www.elevenforum.com/t/enable-or-disable-rewrite-with-copilot-in-microsoft-edge.24752/
+
+		-Turn On Receive Updates for Other Microsoft Products
+		 https://www.elevenforum.com/t/turn-on-or-off-updates-for-other-microsoft-products-in-windows-11.2849/
+	
+
+Removed
+
+	-Remove Common Program Groups from Start Menu for All Users (Caused newly installed application shortcut from appearing in the Start   Menu for current user.)
+	 https://www.elevenforum.com/t/add-or-remove-common-program-groups-from-start-menu-in-windows-11.3715/
+		
+	-Disable Cortana (Starting with Windows 11 build 25967 (Canary), the Cortana app has been removed.)
+	 https://www.elevenforum.com/t/enable-or-disable-cortana-in-windows-11.6407/
+	
+	-Enable "Show more options" context menu
+	 https://www.elevenforum.com/t/disable-show-more-options-context-menu-in-windows-11.1589/
+		
+	
+
+Updated
+
+	-No Restart command added to:
+		Enable_Features_Microsoft-Windows-Subsystem-Linux.bat
+		Enable_Features_NetFramework3.5.bat
+		remove_features.bat
+		
+	-Updated Win11_Remove_Bloat.ps1 to remove packages that no longer exist in 24H2 and cleaned up list.
+	-Updated remove_bloat_24H2.txt list on 11-25-2024.
+	-Updated WindowsOptionalFeature.txt list on 11-25-2024.
+	-Updated Eleven Forums Tutorials (12-08-2024).xlsx.
+
+Fixed
+
+	-Missing bracket in "Add "Hash value" to Context Menu" in Win11_Look_And_Feel.reg.
+	
+	
+Does not work - Win11_Look_And_Feel.reg
+
+	-Disable "Show more options" context menu
+	 https://www.elevenforum.com/t/disable-show-more-options-context-menu-in-windows-11.1589/

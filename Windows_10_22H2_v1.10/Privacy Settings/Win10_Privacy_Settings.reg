@@ -1,0 +1,542 @@
+Windows Registry Editor Version 5.00
+
+; Updated for Windows 10 22H2 on 01-28-2026. Tested on Enterprise x64.
+
+; Disable Advertising ID for Personalized Ads in Apps
+;https://www.tenforums.com/tutorials/76453-enable-disable-advertising-id-relevant-ads-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo]
+"DisabledByGroupPolicy"=dword:00000001
+
+;Change Feedback Frequency to Never
+;https://www.tenforums.com/tutorials/2441-how-change-feedback-frequency-windows-10-a.html
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Siuf\Rules]
+"NumberOfSIUFInPeriod"=dword:00000000
+"PeriodInNanoSeconds"=-
+
+;Disable Website Access to Language List - "Let websites show me locally relevant content by accessing my language list"
+;https://www.tenforums.com/tutorials/82980-turn-off-website-access-language-list-windows-10-a.html
+[HKEY_CURRENT_USER\Control Panel\International\User Profile]
+"HttpAcceptLanguageOptOut"=dword:00000001
+
+; Remove Copilot Button on Taskbar
+; https://www.tenforums.com/tutorials/209181-add-remove-copilot-button-taskbar-windows-10-a.html
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowCopilotButton"=dword:00000000
+
+; Disable Copilot
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot]
+"TurnOffWindowsCopilot"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\WindowsCopilot]
+"TurnOffWindowsCopilot"=dword:00000001
+
+; Enable clear Browsing Data on Exit of Microsoft Edge
+; https://www.tenforums.com/tutorials/41966-turn-off-clear-browsing-data-exit-microsoft-edge.html
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\Privacy]
+"ClearBrowsingHistoryOnExit"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Privacy]
+"ClearBrowsingHistoryOnExit"=dword:00000001
+
+; Disable Shared Experiences
+; https://www.tenforums.com/tutorials/109989-enable-disable-shared-experiences-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableCdp"=dword:00000000
+
+; Disable AutoSuggest in Explorer address bar and Run dialog
+; https://www.tenforums.com/tutorials/119367-enable-disable-autosuggest-file-explorer-run-windows.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoComplete]
+"AutoSuggest"="no"
+
+; Turn off Manage connections from Windows 10 operating system components to Microsoft services.
+; https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessMotion"=dword:00000002
+"LetAppsSyncWithDevices"=dword:00000002
+"LetAppsAccessRadios"=dword:00000002
+"LetAppsAccessPhone"=dword:00000002
+"LetAppsAccessMessaging"=dword:00000002
+"LetAppsAccessEmail"=dword:00000002
+"LetAppsAccessCallHistory"=dword:00000002
+"LetAppsAccessCalendar"=dword:00000002
+"LetAppsAccessContacts"=dword:00000002
+"LetAppsAccessContacts_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessContacts_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessContacts_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessContacts_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessAccountInfo"=dword:00000002
+"LetAppsAccessNotifications"=dword:00000002
+;"LetAppsAccessMicrophone"=dword:00000002
+;"LetAppsAccessMicrophone_UserInControlOfTheseApps"=hex(7):00,00
+;"LetAppsAccessMicrophone_ForceAllowTheseApps"=hex(7):00,00
+;"LetAppsAccessMicrophone_ForceDenyTheseApps"=hex(7):00,00
+;"LetAppsAccessCamera"=dword:00000002
+;"LetAppsAccessCamera_UserInControlOfTheseApps"=hex(7):00,00
+;"LetAppsAccessCamera_ForceAllowTheseApps"=hex(7):00,00
+;"LetAppsAccessCamera_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessLocation"=dword:00000002
+
+; Disable allow Windows and Apps Access to Camera
+; https://www.tenforums.com/tutorials/71414-allow-deny-os-apps-access-camera-windows-10-a.html
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
+;"Value"="Deny"
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
+;"Value"="Deny"
+
+; Disable allow Windows and Apps Access to Microphone
+; https://www.tenforums.com/tutorials/102647-allow-deny-os-apps-access-microphone-windows-10-a.html
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone]
+;"Value"="Deny"
+
+;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone]
+;"Value"="Deny"
+
+; Disable allow apps to access your video library
+; https://www.tenforums.com/tutorials/102567-allow-deny-os-apps-access-videos-library-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\videosLibrary]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\videosLibrary]
+"Value"="Deny"
+
+; Disable allow apps to access your picture library
+; https://www.tenforums.com/tutorials/102590-allow-deny-os-apps-access-pictures-library-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\picturesLibrary]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\picturesLibrary]
+"Value"="Deny"
+
+; Disable allow apps to access your documents
+; https://www.tenforums.com/tutorials/102595-allow-deny-os-apps-access-documents-library-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\documentsLibrary]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\documentsLibrary]
+"Value"="Deny"
+
+; Disable allow apps to access your file system
+; https://www.tenforums.com/tutorials/104030-allow-deny-apps-access-file-system-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\broadFileSystemAccess]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\broadFileSystemAccess]
+"Value"="Deny"
+
+; Disable Search History in File Explorer
+; https://www.tenforums.com/tutorials/88749-enable-disable-search-history-windows-10-file-explorer.html
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"DisableSearchBoxSuggestions"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableSearchBoxSuggestions"=dword:00000001
+
+; Disable File History
+; https://www.tenforums.com/tutorials/64728-enable-disable-file-history-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\FileHistory]
+"Disabled"=dword:00000001
+
+; Disable User Files Backup in Windows Backup
+; https://www.tenforums.com/tutorials/98709-enable-disable-user-files-backup-windows-backup-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Backup\Client]
+"DisableBackupUI"=dword:00000001
+
+; Turn Off Device Search History (Turning off device search history does not clear your device search history.)
+; https://www.tenforums.com/tutorials/133365-how-turn-off-device-search-history-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SearchSettings]
+"IsDeviceSearchHistoryEnabled"=dword:00000000
+
+; Turn off Get even more out of Windows Suggestions (This will only work with Windows 10 build 18945 and higher.)
+; https://www.tenforums.com/tutorials/137645-turn-off-get-even-more-out-windows-suggestions-windows-10-a.html
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
+"ScoobeSystemSettingEnabled"=dword:00000000
+
+; Disable Location Service (Starting with Windows 10 build 19582.1000, the Set time zone automatically toggle will now be greyed out if location has been disabled.)
+; https://www.tenforums.com/tutorials/13225-turn-off-location-services-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
+"Value"="Deny"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
+"Value"="Deny"
+
+; Turn Off Location Access for Desktop apps
+; https://www.tenforums.com/tutorials/138191-turn-off-location-access-desktop-apps-windows-10-a.html
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location\NonPackaged]
+"Value"="Deny"
+
+; Turn Off Find My Device
+; https://www.tenforums.com/tutorials/28946-turn-off-find-my-device-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Settings\FindMyDevice]
+"LocationSyncEnabled"=dword:00000000
+
+; Turn off Location for this device.
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\LocationAndSensors]
+"DisableLocation"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FindMyDevice]
+"AllowFindMyDevice"=dword:00000000
+
+; Disable allow access to account Info on this device
+; https://www.tenforums.com/tutorials/102723-allow-deny-os-apps-access-account-info-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userAccountInformation]
+"Value"="Deny"
+
+; Disable allow Windows and Apps Access to Contacts
+; https://www.tenforums.com/tutorials/104644-allow-deny-os-apps-access-contacts-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts]
+"Value"="Deny"
+
+; Disable Online Speech Recognition
+; https://www.tenforums.com/tutorials/118136-enable-disable-online-speech-recognition-windows-10-a.html?s=3a9903433dacc022dbe6ce536cfd0970
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\InputPersonalization]
+"AllowInputPersonalization"=dword:00000000
+
+; Turn Off Online Speech Recognition
+; https://www.tenforums.com/tutorials/101902-turn-off-online-speech-recognition-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings\OnlineSpeechPrivacy]
+"HasAccepted"=dword:00000000
+
+; Turn Off Typing Insights
+; https://www.tenforums.com/tutorials/113073-turn-off-typing-insights-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Input\Settings]
+"InsightsEnabled"=dword:00000000
+
+; Disable collect activity history
+; https://www.tenforums.com/tutorials/100341-enable-disable-collect-activity-history-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"PublishUserActivities"=dword:00000000
+
+; Turn off the ability to download and update offline maps
+; https://www.tenforums.com/tutorials/106248-enable-disable-automatic-updates-offline-maps-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Maps]
+"AutoDownloadAndUpdateMapData"=dword::00000000
+
+; Turn Off Automatic Map Updates
+; https://www.tenforums.com/tutorials/52868-turn-off-automatic-updates-offline-maps-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SYSTEM\Maps]
+"AutoUpdateEnabled"=dword:00000000
+
+; Disable Timeline
+; https://www.tenforums.com/tutorials/101852-enable-disable-timeline-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableActivityFeed"=dword:00000000
+
+; Turn Off TruePlay
+; https://www.tenforums.com/tutorials/101525-turn-off-trueplay-gaming-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Games]
+"EnableXBGM"=dword:00000000
+
+; Disable Sync Activities from PC to Cloud
+; https://www.tenforums.com/tutorials/110063-enable-disable-sync-activities-pc-cloud-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"UploadUserActivities"=dword:00000000
+
+; Disable Sync Your Settings
+; https://www.tenforums.com/tutorials/43246-enable-disable-sync-your-settings-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SettingSync]
+"DisableSettingSync"=dword:00000002
+"DisableSettingSyncUserOverride"=dword:00000001
+
+; Disable Syncing Other Windows Settings
+; https://www.tenforums.com/tutorials/117908-enable-disable-syncing-other-windows-settings-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SettingSync]
+"DisableWindowsSettingSync"=dword:00000002
+"DisableWindowsSettingSyncUserOverride"=dword:00000001
+
+; Disable Syncing Passwords
+; https://www.tenforums.com/tutorials/117899-enable-disable-syncing-passwords-windows-10-sync-your-settings.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SettingSync]
+"DisableCredentialsSettingSync"=dword:00000002
+"DisableCredentialsSettingSyncUserOverride"=dword:00000001
+
+; Disable Syncing Theme
+; https://www.tenforums.com/tutorials/117903-enable-disable-syncing-theme-windows-10-sync-your-settings.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SettingSync]
+"DisablePersonalizationSettingSync"=dword:00000002
+"DisablePersonalizationSettingSyncUserOverride"=dword:00000001
+
+; Turn Off Sync Your Settings in Settings app
+; https://www.tenforums.com/tutorials/4077-turn-off-sync-settings-microsoft-account-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Accessibility]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\AppSync]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\BrowserSettings]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Credentials]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\DesktopTheme]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Language]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\PackageState]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Personalization]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\StartLayout]
+"Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Windows]
+"Enabled"=dword:00000000
+
+; Turn off Message Sync
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Messaging]
+"AllowMessageSync"=dword:00000000
+
+; Disable Show Cloud Content in Search Results
+; https://www.tenforums.com/tutorials/88731-enable-disable-show-cloud-content-search-results-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCloudSearch"=dword:00000000
+
+; Turn off search online and include web results (This tutorial will only work in Windows 10 version 1909, 2004 and higher.)
+; https://www.tenforums.com/tutorials/25016-turn-off-search-online-include-web-results-windows-10-a.html
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"AllowSearchToUseLocation"=dword:00000000
+"BingSearchEnabled"=dword:00000000
+
+; Disable Cortana
+; https://www.tenforums.com/tutorials/25118-enable-disable-cortana-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000
+
+; Disable Cortana on your Lock Screen
+; https://www.tenforums.com/tutorials/46494-enable-disable-cortana-lock-screen-windows-10-a.html
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Speech_OneCore\Preferences]
+"VoiceActivationEnableAboveLockscreen"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortanaAboveLock"=dword:00000000
+
+; Turn Off Cortana on your Lock Screen
+; https://www.tenforums.com/tutorials/46494-enable-disable-cortana-lock-screen-windows-10-a.html
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Speech_OneCore\Settings\VoiceActivation\Microsoft.549981C3F5F10_8wekyb3d8bbwe!App]
+"AgentActivationOnLockScreenEnabled"=dword:00000000
+
+; Turn Off Cortana in Microsoft Edge
+; https://www.tenforums.com/tutorials/6899-turn-off-cortana-microsoft-edge-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\ServiceUI]
+"EnableCortana"=dword:00000000
+
+; Turn Off Cortana Voice Activation
+; https://www.tenforums.com/tutorials/18418-how-turn-off-hey-cortana-voice-activation-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Preferences]
+"VoiceActivationOn"=dword:00000000
+
+; Turn Off Getting to know you for Inking & Typing Personalization
+; https://www.tenforums.com/tutorials/118127-turn-off-inking-typing-personalization-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization]
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization\TrainedDataStore]
+"HarvestContacts"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Personalization\Settings]
+"AcceptedPrivacyPolicy"=dword:00000000
+
+; Disable Suggested Apps in Windows Ink Workspace
+; https://www.tenforums.com/tutorials/55767-enable-disable-windows-ink-workspace-suggested-apps-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PenWorkspace]
+"PenWorkspaceAppSuggestionsEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsInkWorkspace]
+"AllowSuggestedAppsInWindowsInkWorkspace"=dword:00000000
+
+; Turn Off Improve Inking & Typing Recognition
+; https://www.tenforums.com/tutorials/107050-turn-off-improve-inking-typing-recognition-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Input\TIPC]
+"Enabled"=dword:00000000
+
+; Turn Off App Suggestions on Start Menu
+; https://www.tenforums.com/tutorials/24117-turn-off-app-suggestions-start-windows-10-a.html
+; OLD WAY
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SystemPaneSuggestionsEnabled"=dword:00000000
+
+; NEW WAY
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-338388Enabled"=dword:00000000
+
+; Turn off updates to speech recognition and speech synthesis
+; https://privacyamp.com/knowledge-base/windows-10-privacy-settings/ (LINK NO LONGER WORKS)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech_OneCore\Preferences]
+"ModelDownloadAllowed"=dword:00000000
+
+; Disable Document Review for Speech Recognition
+; https://www.tenforums.com/tutorials/120624-enable-disable-document-review-speech-recognition-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Speech\Preferences]
+"EnableDocumentHarvesting"=dword:00000000
+
+; Turn off Internet Explorer geolocation
+; https://www.windows-security.org/6207416e1994409c1dc9a5a27c7fea9f/turn-off-browser-geolocation
+; https://www.stigviewer.com/stig/microsoft_internet_explorer_11/2015-06-30/finding/V-46825
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Geolocation]
+"PolicyDisableGeolocation"=dword:00000001
+
+; Disable "Send Do Not Track" Requests in Microsoft Edge
+; https://www.tenforums.com/tutorials/115212-enable-disable-send-do-not-track-requests-microsoft-edge.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main]
+"DoNotTrack"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\Main]
+"DoNotTrack"=dword:00000000
+
+; Disable Let Apps use Advertising ID for Relevant Ads
+; https://www.tenforums.com/tutorials/76453-enable-disable-advertising-id-relevant-ads-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo]
+"DisabledByGroupPolicy"=dword:00000001
+
+; Turn Off Website Access of Language List 
+; https://www.tenforums.com/tutorials/82980-turn-off-website-access-language-list-windows-10-a.html
+[HKEY_CURRENT_USER\Control Panel\International\User Profile]
+"HttpAcceptLanguageOptOut"=dword:00000001
+
+; Disable App Launch Tracking
+; https://www.tenforums.com/tutorials/128523-enable-disable-app-launch-tracking-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\EdgeUI]
+"DisableMFUTracking"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EdgeUI]
+"DisableMFUTracking"=dword:00000001
+
+; Turn Off App Launch Tracking
+; https://www.tenforums.com/tutorials/82967-turn-off-app-launch-tracking-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackProgs"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000
+
+; Turn Off for Send Required Diagnostic and Usage Data
+; https://www.tenforums.com/tutorials/7032-change-diagnostic-data-settings-windows-10-a.html
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack]
+"ShowedToastAtLevel"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection]
+"AllowTelemetry"=dword:00000001
+"MaxTelemetryAllowed"=dword:00000001
+
+; Enable Delete Diagnostic Data
+; https://www.tenforums.com/tutorials/118019-enable-disable-delete-diagnostic-data-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"DisableDeviceDelete"=-
+
+; Disable Windows Error Reporting for All Users
+; https://www.tenforums.com/tutorials/107232-enable-disable-windows-error-reporting-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+; Turn off Tailored experiences with diagnostic data
+; https://www.tenforums.com/tutorials/76426-turn-off-tailored-experiences-diagnostic-data-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Privacy]
+"TailoredExperiencesWithDiagnosticDataEnabled"=dword:00000000
+
+; Turn Off Send Additional Diagnostic and Performance Data about Narrator
+; https://www.tenforums.com/tutorials/114572-turn-off-send-diagnostic-data-about-narrator-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Narrator\NoRoam]
+"DetailedFeedback"=dword:00000000
+
+; Set Feedback Frequency to Never
+; https://www.tenforums.com/tutorials/2441-change-feedback-frequency-windows-10-a.html
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Siuf\Rules]
+"NumberOfSIUFInPeriod"=dword:00000000
+"PeriodInNanoSeconds"=-
+
+; Turn Off Notifications from Apps and Other Senders
+; https://www.tenforums.com/tutorials/4111-turn-off-notifications-apps-senders-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PushNotifications]
+"ToastEnabled"=dword:00000000
+
+; Disable "Recently added" Apps List on the Start Menu
+; https://www.tenforums.com/tutorials/104828-enable-disable-recently-added-apps-start-menu-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"HideRecentlyAddedApps"=dword:00000001
+
+; Hide Frequent folders from Quick access
+; https://www.tenforums.com/tutorials/2712-add-remove-frequent-folders-quick-access-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"ShowFrequent"=dword:00000000
+
+; Remove Frequent folders in Quick Access 
+; https://www.tenforums.com/tutorials/2712-add-remove-frequent-folders-quick-access-windows-10-a.html
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HomeFolderDesktop\NameSpace\DelegateFolders\{3936E9E4-D92C-4EEE-A85A-BC16D5EA0819}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\HomeFolderDesktop\NameSpace\DelegateFolders\{3936E9E4-D92C-4EEE-A85A-BC16D5EA0819}]
+
+; Remove Recent Files from Quick access
+; https://www.tenforums.com/tutorials/2713-add-remove-recent-files-quick-access-windows-10-a.html
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HomeFolderDesktop\NameSpace\DelegateFolders\{3134ef9c-6b18-4996-ad04-ed5912e00eb5}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\HomeFolderDesktop\NameSpace\DelegateFolders\{3134ef9c-6b18-4996-ad04-ed5912e00eb5}]
+
+; Hide Recent Files from Quick access
+; http://www.tenforums.com/tutorials/2713-quick-access-add-remove-recent-files-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"ShowRecent"=dword:00000000
+
+; Turn Off Recent Items and Frequent Places
+; https://www.tenforums.com/tutorials/3469-turn-off-recent-items-frequent-places-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackDocs"=dword:00000000
+
+; Turn Off Recent Items and Frequent Places in Jump Lists
+; https://www.tenforums.com/tutorials/3469-turn-off-recent-items-frequent-places-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRecentDocsHistory"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRecentDocsHistory"=dword:00000001
+
+; Disable Automatically Installing Suggested Apps
+; https://www.tenforums.com/tutorials/68217-turn-off-automatic-installation-suggested-apps-windows-10-a.html
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SilentInstalledAppsEnabled"=dword:00000000
+
+; Turn on get updates from Microsoft and LAN
+; https://www.tenforums.com/tutorials/4742-choose-how-windows-store-app-updates-downloaded-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Settings]
+"DownloadMode"="0"
+
+; Turn On Clear Virtual Memory Pagefile at Shutdown
+; https://www.tenforums.com/tutorials/77773-clear-virtual-memory-pagefile-shutdown-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"ClearPageFileAtShutdown"=dword:00000001
+
+; Disable Use of Windows Hello Biometrics
+; https://www.tenforums.com/tutorials/117987-enable-disable-windows-hello-biometrics-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Biometrics]
+"Enabled"=dword:00000000
+
+; Disable Users to Sign in to Windows 10 using Biometrics
+; https://www.tenforums.com/tutorials/107441-enable-disable-users-sign-windows-10-using-biometrics.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Biometrics\Credential Provider]
+"Enabled"=dword:00000000
+
+; Turn On Automatic Download and Install of App Updates by Store
+; https://www.tenforums.com/tutorials/6664-turn-off-automatic-updates-apps-windows-10-store.html
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore]
+"AutoDownload"=dword:00000004
+
+; Turn On Automatically Adjust Active Hours for All Users
+; https://www.tenforums.com/tutorials/121699-turn-off-automatically-adjust-active-hours-windows-10-a.html#option2
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"SmartActiveHoursState"=dword:00000001

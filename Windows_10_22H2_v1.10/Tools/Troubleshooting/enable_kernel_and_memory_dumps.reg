@@ -1,0 +1,79 @@
+Windows Registry Editor Version 5.00
+
+; Have Windows Create a Kernel Memory Dump on BSOD
+;https://www.tenforums.com/tutorials/5560-configure-windows-10-create-minidump-bsod.html
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+"AutoReboot"=dword:00000001
+"CrashDumpEnabled"=dword:00000002
+"Overwrite"=dword:00000001
+"LogEvent"=dword:00000001
+"DumpFile"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,4d,00,45,00,4d,00,4f,00,52,00,59,00,2e,00,44,00,4d,00,50,\
+  00,00,00
+"MinidumpDir"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,\
+  00,74,00,25,00,5c,00,4d,00,69,00,6e,00,69,00,64,00,75,00,6d,00,70,00,00,00
+"DumpFilters"=hex(7):64,00,75,00,6d,00,70,00,66,00,76,00,65,00,2e,00,73,00,79,\
+  00,73,00,00,00,00,00
+  
+; Have Windows Create a Complete Memory Dump on BSOD
+;https://www.tenforums.com/tutorials/5560-configure-windows-10-create-minidump-bsod.html
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+"AutoReboot"=dword:00000001
+"CrashDumpEnabled"=dword:00000001
+"Overwrite"=dword:00000001
+"LogEvent"=dword:00000001
+"DumpFile"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,4d,00,45,00,4d,00,4f,00,52,00,59,00,2e,00,44,00,4d,00,50,\
+  00,00,00
+"MinidumpDir"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,\
+  00,74,00,25,00,5c,00,4d,00,69,00,6e,00,69,00,64,00,75,00,6d,00,70,00,00,00
+"DumpFilters"=hex(7):64,00,75,00,6d,00,70,00,66,00,76,00,65,00,2e,00,73,00,79,\
+  00,73,00,00,00,00,00
+  
+  
+; Have Windows Create an Automatic Memory Dump on BSOD
+;https://www.tenforums.com/tutorials/5560-configure-windows-10-create-minidump-bsod.html
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+"AutoReboot"=dword:00000001
+"CrashDumpEnabled"=dword:00000007
+"DumpFile"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,4d,00,45,00,4d,00,4f,00,52,00,59,00,2e,00,44,00,4d,00,50,\
+  00,00,00
+"DumpFilters"=hex(7):64,00,75,00,6d,00,70,00,66,00,76,00,65,00,2e,00,73,00,79,\
+  00,73,00,00,00,00,00
+"LogEvent"=dword:00000001
+"MinidumpDir"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,\
+  00,74,00,25,00,5c,00,4d,00,69,00,6e,00,69,00,64,00,75,00,6d,00,70,00,00,00
+"MinidumpsCount"=dword:00000032
+"Overwrite"=dword:00000001
+"DisplayDisabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\StorageTelemetry]
+"DeviceDumpEnabled"=dword:00000001
+"StorageTCCode_0"=dword:00000077
+"StorageTCCode_1"=dword:0000007a
+"StorageTCCode_2"=dword:0000007b
+"StorageTCCode_3"=dword:69696969
+
+
+; Have Windows Create an Active Memory Dump on BSOD
+;https://www.tenforums.com/tutorials/5560-configure-windows-10-create-minidump-bsod.html
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+"AutoReboot"=dword:00000001
+"CrashDumpEnabled"=dword:00000001
+"DumpFile"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,4d,00,45,00,4d,00,4f,00,52,00,59,00,2e,00,44,00,4d,00,50,\
+  00,00,00
+"DumpFilters"=hex(7):64,00,75,00,6d,00,70,00,66,00,76,00,65,00,2e,00,73,00,79,\
+  00,73,00,00,00,00,00
+"LogEvent"=dword:00000001
+"MinidumpDir"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,\
+  00,74,00,25,00,5c,00,4d,00,69,00,6e,00,69,00,64,00,75,00,6d,00,70,00,00,00
+"MinidumpsCount"=dword:00000032
+"Overwrite"=dword:00000001
+
+
+; Enable BSOD Automatic Restart
+; https://www.tenforums.com/tutorials/69012-enable-disable-bsod-automatic-restart-windows-10-a.html
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+"AutoReboot"=dword:00000001
