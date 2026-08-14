@@ -1,1 +1,0 @@
-Dism /online /Enable-Feature /FeatureName:Microsoft-Windows-Subsystem-Linux /NoRestart
