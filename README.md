@@ -1,6 +1,6 @@
 # Take the Power Back Pack for Windows 10 and Windows 11
 
-I made this for me but decided to share it as others may find it useful.
+I made this for myself but decided to share it as others may find it useful.
 
 Please read the change log in the Docs directory for each release to find out what was added, removed or changed.
 
